@@ -68,6 +68,7 @@ function editTask(task) {
     const saveButton = task.querySelector(".saveButton");
     const cancelButton = task.querySelector(".cancelButton");
     const deleteButton = task.querySelector(".deleteButton");
+    editInput.value = taskSpan.textContent;
     checkbox.style.display = "none";
     taskSpan.style.display = "none";
     editInput.style.display = "inline";

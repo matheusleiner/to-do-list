@@ -80,6 +80,8 @@ function editTask(task: HTMLElement): void {
     const cancelButton = task.querySelector(".cancelButton") as HTMLButtonElement
     const deleteButton = task.querySelector(".deleteButton") as HTMLButtonElement
 
+    editInput.value = taskSpan.textContent!
+
     checkbox.style.display = "none"
     taskSpan.style.display = "none"
     editInput.style.display = "inline"
