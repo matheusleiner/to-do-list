@@ -40,11 +40,15 @@ function addTask() {
     task.appendChild(deleteButton);
     taskList.appendChild(task);
     checkbox.addEventListener("click", () => toggleComplete(task));
+    editInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            saveEdit(task);
+        }
+    });
     editButton.addEventListener("click", () => editTask(task));
     saveButton.addEventListener("click", () => saveEdit(task));
     cancelButton.addEventListener("click", () => cancelEdit(task));
     deleteButton.addEventListener("click", () => deleteTask(task));
-    taskList.style.display = "flex";
     userInput.value = "";
 }
 function toggleComplete(task) {

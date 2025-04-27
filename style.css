@@ -69,12 +69,11 @@ main > div > button:active {
 }
 
 main > ul {
-    display: none;
+    display: flex;
     flex-direction: column;
     list-style: none;
     gap: 10px;
     padding: 10px 0;
-    border-top: solid white 1px;
 }
 
 .task {
